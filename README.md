@@ -39,7 +39,7 @@ Key Features relevant to this project include:
 
 # 2. Dataset Used
 
-This project uses standard benchmark datasets to test and demonstrate the SLAM system. The datasets are mounted into the Docker container at '/root/Datasets/' .
+This project uses standard benchmark datasets to test and demonstrate the SLAM system. The datasets are mounted into the Docker container at `/root/Datasets/` .
 
 * **KITTI Odometry (Sequence 00):**
     * **Type:** Monocular video from a car driving through a city.
@@ -82,7 +82,7 @@ This script automatically handles GUI permissions and mounts the necessary folde
 
 ### Step 2: Run an Example:
 
-You will be placed inside the container's terminal ( 'root@...' ). All code is pre-compiled and located in '~/ORB_SLAM3' .
+You will be placed inside the container's terminal ( `root@...` ). All code is pre-compiled and located in `~/ORB_SLAM3` .
 1. Navigate to the code directory:
 ```
 cd ~/ORB_SLAM3
