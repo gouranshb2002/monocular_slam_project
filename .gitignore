@@ -1,0 +1,13 @@
+# Build files
+build/
+Examples/
+lib/
+Vocabulary/ORBvoc.txt
+
+# Datasets - Do not push large data to GitHub
+*.zip
+*.bag
+Datasets/
+
+# Output files
+KeyFrameTrajectory.txt
