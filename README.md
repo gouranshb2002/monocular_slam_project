@@ -1,5 +1,6 @@
 # Monocular SLAM Project (ORB-SLAM3)
-###V1.0, October 30th, 2025
+### V1.0, October 30th, 2025
+
 **Author:** Gouransh Bhatnagar
 
 # Related Publications:
@@ -22,7 +23,7 @@
 
 This project is based on **ORB-SLAM3** developed by Carlos Campos, Richard Elvira, Juan J. Gómez Rodríguez, José M. M. Montiel, Juan D. Tardos.
 
-**ORB-SLAM:**ORB-SLAM3 is a state-of-the-art, open-source library for Simultaneous Localization and Mapping (SLAM). It is the first system capable of performing Visual, Visual-Inertial, and Multi-Map SLAM with a single library.
+**ORB-SLAM:** It is a state-of-the-art, open-source library for Simultaneous Localization and Mapping (SLAM). It is the first system capable of performing Visual, Visual-Inertial, and Multi-Map SLAM with a single library.
 
 Key Features relevant to this project include:
 
@@ -38,7 +39,7 @@ Key Features relevant to this project include:
 
 # 2. Dataset Used
 
-This project uses standard benchmark datasets to test and demonstrate the SLAM system. The datasets are mounted into the Docker container at '/root/Datasets/'.
+This project uses standard benchmark datasets to test and demonstrate the SLAM system. The datasets are mounted into the Docker container at '/root/Datasets/' .
 
 * **KITTI Odometry (Sequence 00):**
     * **Type:** Monocular video from a car driving through a city.
@@ -77,18 +78,19 @@ From the project's root directory (where `run.sh` is), simply run the script:
 ```
 ./run.sh
 ```
-This script automatically handles GUI permissions and mounts the necessary folders (~/Datasets and the project directory) into the container.
+This script automatically handles GUI permissions and mounts the necessary folders (Datasets and the project directory) into the container.
 
 ### Step 2: Run an Example:
 
-You will be placed inside the container's terminal ('root@...'). All code is pre-compiled and located in '~/ORB_SLAM3'.
+You will be placed inside the container's terminal ( 'root@...' ). All code is pre-compiled and located in '~/ORB_SLAM3' .
 1. Navigate to the code directory:
 ```
 cd ~/ORB_SLAM3
 ```
 Then, run any of the example commands below.
 
-* Example 1: KITTI (Long Sequence with Viewer)
+* Example 1: **KITTI** (Long Sequence with Viewer):
+
 This is the best example for a full demonstration. It runs on a long sequence of a car driving through a city.
 ```
 Examples/Monocular/mono_kitti \
@@ -97,7 +99,8 @@ Examples/Monocular/KITTI00-02.yaml \
 /root/Datasets/KITTI_odometry/dataset/sequences/00
 ```
 
-* Example 2: TUM (Short Sequence with Viewer)
+* Example 2: **TUM** (Short Sequence with Viewer):
+
 This is a short (~26 second) sequence from the TUM dataset. It's a great, quick test to see the 3D viewer working.
 ```
 Examples/Monocular/mono_tum \
@@ -106,7 +109,8 @@ Examples/Monocular/TUM1.yaml \
 /root/Datasets/TUM/rgbd_dataset_freiburg1_xyz
 ```
 
-* Example 3: EuRoC (Fast Execution, No Viewer)
+* Example 3: **EuRoC** (Fast Execution, No Viewer):
+
 This executable does not have a viewer. It will just process the data and save the trajectory file, which is good for fast experiments.
 ```
 Examples/Monocular/mono_euroc \
